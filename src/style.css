@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li a:hover {
+    color: #378537;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: large;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(circle at top right, #e8a87c 35%, #ffffff 16%);
+
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.menu-list ul{
+    display: flex;
+    gap: 10rem;
+}
+
+.menu-list li {
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+.menu-list li:hover {
+    transform: scale(1.05); /* Aumenta em 10% quando o mouse passa por cima */
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+section {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* width: 500px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.content .content-paragraph{
+    text-align: justify;
+    padding: 10px 0px;
+    line-height: 1.8;
+    width: 350px;
+}
+
+.content .content-text {
+    padding-bottom: 20px;
+}
+
+.content .content-button button{
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+    border: none; 
+    background-color: #48c548;
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+
+    transition: transform 0.5s;
+}
+
+.content .content-button button:hover {
+    background-color: #328532; 
+    transform: scale(1.02);
+}
+
+.content-image img{
+    width: 720px; 
+    transition: transform 0.3s;
+}
+
+.content-image img:hover {
+    transform: scale(1.01); /* Aumenta em 10% quando o mouse passa por cima */
+}

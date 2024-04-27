@@ -1,0 +1,109 @@
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1124px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .menu-list ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content .content-paragraph {
+        padding: 10px;
+    }
+
+}
+
+
+/* Media Query para telas menores que 900px */
+@media screen and (max-width: 1000px) {
+    .menu-list ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content .content-paragraph {
+        padding: 10px;
+    }
+
+    /* Oculta a seção da imagem */
+    .content-image {
+        display: none;
+    }
+}
+
+
+/* Media Query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .menu-list ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .content .content-paragraph {
+        padding: 10px;
+    }
+
+    .content-image {
+        display: none; /* Oculta a seção da imagem */
+    }
+
+    body::after {
+        content: '';
+        position: absolute;
+        right: 5px;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle at left bottom, transparent , #e8a87c 10%); /* Gradiente radial para criar o efeito de metade do círculo */
+        border-radius: 50%; /* Torna o elemento circular */
+        z-index: -1; /* Coloca o círculo atrás do conteúdo */
+    }
+}
+
+/* Media Query para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    body {
+        background: none;
+    }
+
+    body::after {
+        background: none;
+    }
+
+    .menu {
+        background-color: #e8a87c;
+    }
+
+    .menu p {
+        font-size: large;
+        padding: 20px;
+    }
+
+    .content .content-paragraph {
+        padding: 10px;
+        font-size: small;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .menu-list ul li {
+        border-bottom: solid 2px #328532;
+    }
+}
