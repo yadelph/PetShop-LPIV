@@ -67,6 +67,7 @@ ul{
     padding: 12px;
     line-height: 2;
     height: 300px;
+    text-align: justify;
 }
 li{
     list-style-type: none;
@@ -87,3 +88,8 @@ li:before{
         gap: 30px
     }
   }
+.link-do-botao{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
